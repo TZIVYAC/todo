@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { render } from 'react-dom';
-
-
 
 export default function Carrousel(props) {
     const [CurrentImg, setCurrentImg] = useState(0);
+    const { img1, img2, img3, img4 } = props
     const imgCnt = React.Children.count(props.children);
 
     function returnCurrentImg(index) {
